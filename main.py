@@ -1,5 +1,5 @@
 import tqdm
-from openprompt.data_utils.text_classification_dataset import AgnewsTitleProcessor
+from openprompt.data_utils.text_classification_dataset import AgnewsTitleProcessor, KRnewsTitleProcessor
 # from openprompt.data_utils.text_classification_dataset import  NewstitleProcessor, AgnewsTitleProcessor, SnippetsProcessor
 import torch
 from openprompt.data_utils.utils import InputExample
@@ -56,6 +56,16 @@ if args.dataset == "Dl-Clickbait":
     max_seq_l = 128
     batch_s = 1
 
+if args.dataset == "KR-Clickbait":
+    dataset['train'] = KRnewsTitleProcessor().get_train_examples("./datasets/TextClassification/KR-Clickbait/")
+    dataset['test'] = KRnewsTitleProcessor().get_test_examples("./datasets/TextClassification/KR-Clickbait/")
+    class_labels = KRnewsTitleProcessor().get_labels()
+    scriptsbase = "TextClassification/KR-Clickbait"
+    scriptformat = "txt"
+    cutoff = 0.5
+    max_seq_l = 128
+    batch_s = 1
+
 # elif args.dataset == "SC-Clickbait":
 #     dataset['train'] = SnippetsProcessor().get_train_examples("./datasets/TextClassification/SC-Clickbait/")
 #     dataset['test'] = SnippetsProcessor().get_test_examples("./datasets/TextClassification/SC-Clickbait/")
@@ -94,7 +104,7 @@ if args.verbalizer == "cpt":
 
 from openprompt import PromptForClassification
 
-use_cuda = False
+use_cuda = True
 prompt_model = PromptForClassification(plm=plm, template=mytemplate, verbalizer=myverbalizer, freeze_plm=False,
                                        plm_eval_mode=args.plm_eval_mode)
 if use_cuda:
