@@ -115,14 +115,14 @@ class AgnewsTitleProcessor(DataProcessor):
         test_dataset = processor.get_test_examples(dataset_path)
         
         assert processor.get_num_labels() == 2
-        assert processor.get_labels() == ["not-clickbait", "clickbait"]
+        assert processor.get_labels() == ["clickbait", "not-clickbait"]
         assert len(train_dataset) > 0  # 학습 데이터가 존재
         assert len(test_dataset) > 0   # 테스트 데이터가 존재
     """
     
     def __init__(self):
         super().__init__()
-        self.labels = ["clickbait", "not-clickbait"]
+        self.labels = ["he", "o"]
     
     def get_train_examples(self, data_dir):
         """Gets a collection of `InputExample` for the train set."""
@@ -166,6 +166,100 @@ class AgnewsTitleProcessor(DataProcessor):
                 examples.append(example)
         
         return examples
+    
+    def get_labels(self):
+        """Gets the list of labels for this data set."""
+        return self.labels
+    
+    def get_num_labels(self):
+        return len(self.labels)
+    
+class KRnewsTitleProcessor(DataProcessor):
+    """
+    `KR News Title` is a Clickbait Detection dataset that uses only the title of news articles.
+    
+    Examples:
+    
+    ..  code-block:: python
+    
+        from openprompt.data_utils.text_classification_dataset import PROCESSORS
+        
+        base_path = "datasets/TextClassification"
+        
+        dataset_name = "KR-Clickbait"
+        dataset_path = os.path.join(base_path, dataset_name)
+        processor = PROCESSORS[dataset_name.lower()]()
+        train_dataset = processor.get_train_examples(dataset_path)
+        test_dataset = processor.get_test_examples(dataset_path)
+        
+        assert processor.get_num_labels() == 2
+        assert processor.get_labels() == ["clickbait", "not-clickbait"]
+        assert len(train_dataset) > 0  # 학습 데이터가 존재
+        assert len(test_dataset) > 0   # 테스트 데이터가 존재
+    """
+    
+    def __init__(self):
+        super().__init__()
+        self.labels = ["낚시성", "비낚시성"]
+    
+    def get_train_examples(self, data_dir):
+        """Gets a collection of `InputExample` for the train set."""
+        return self.get_examples(data_dir, "train")
+    
+    def get_test_examples(self, data_dir):
+        """Gets a collection of `InputExample` for the test set."""
+        return self.get_examples(data_dir, "test")
+    
+    def get_examples(self, data_dir, split):
+        path = os.path.join(data_dir, f"{split}.csv")
+        examples = []
+
+        with open(path, encoding='utf-8-sig') as f:  # BOM 제거
+            reader = csv.reader(f, delimiter=',', quotechar='"')
+            for idx, row in enumerate(reader):
+                # if len(row) != 4:
+                #     logger.warning(f"Invalid row format at index {idx}: {row}")
+                #     continue
+                if len(row) == 4:
+                  label, title, subtitle, id_ = row
+                elif len(row) == 3:
+                  label, title, subtitle = row
+
+                title = title.translate(str.maketrans({
+                    '“': '"', '”': '"',
+                    '‘': "'", '’': "'",
+                    ' ': ' '
+                }))
+
+                subtitle = subtitle.translate(str.maketrans({
+                    '“': '"', '”': '"',
+                    '‘': "'", '’': "'",
+                    ' ': ' '
+                }))
+
+                text_a = title.replace('\\', ' ').strip()
+                text_b = subtitle.replace('\\', ' ').strip()
+
+                try:
+                    label = int(label)
+                    if label not in [0, 1]:
+                        logger.warning(f"Invalid label at index {idx}: {label}")
+                        continue
+                except ValueError:
+                    logger.warning(f"Invalid label format at index {idx}: {label}")
+                    continue
+
+                example = InputExample(
+                    guid=str(idx),
+                    text_a=text_a,
+                    text_b=text_b,
+                    label=label
+                )
+                examples.append(example)
+
+        return examples
+
+
     
     def get_labels(self):
         """Gets the list of labels for this data set."""
@@ -436,4 +530,5 @@ PROCESSORS = {
     "mnli": MnliProcessor,
     "yahoo": YahooProcessor,
     "dl-clickbait": AgnewsTitleProcessor,  # Dl-Clickbait 데이터셋 추가
+    "kr-clickbait": KRnewsTitleProcessor,  # KR-Clickbait 데이터셋 추가
 }

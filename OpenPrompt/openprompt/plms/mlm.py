@@ -80,8 +80,6 @@ class MLMTokenizerWrapper(TokenizerWrapper):
             encoder_inputs['token_type_ids'] = [0] *len(encoder_inputs['input_ids'])
         # padding
         encoder_inputs = self.padding(input_dict=encoder_inputs, max_len=self.max_seq_length, pad_id_for_inputs=self.tokenizer.pad_token_id)
-
-
         if len(encoded_tgt_text) > 0:
             encoder_inputs = {**encoder_inputs, "encoded_tgt_text": encoded_tgt_text}# convert defaultdict to dict
         else:

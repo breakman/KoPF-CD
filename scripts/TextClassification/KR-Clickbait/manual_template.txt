@@ -1,1 +1,7 @@
+기사 제목: {"placeholder":"text_a"} 요약 내용: {"placeholder":"text_b"} 이 둘은 {"mask"} 관계입니다.
+기사 제목: {"placeholder":"text_a"}, 기사 내용: {"placeholder":"text_b"}, 이것은 가짜기사 인가요? 정답 : {"mask"}
+제목과 내용을 포함한 뉴스 항목 {"mask"}입니다: {"placeholder": "text_a"} {"placeholder": "text_b"}
+제목과 내용을 포함한 뉴스 항목 {"mask"}입니다: {"placeholder": "text_a"}, {"placeholder": "text_b"}
+제목과 내용을 포함한 낚시성 뉴스 항목 {"mask"}입니다: {"placeholder": "text_a"}, {"placeholder": "text_b"}
+{"placeholder": "text_a"} : 낚시성 기사인가요? 정답: {"mask"}
  A {"mask"} news : {"placeholder": "text_a"}

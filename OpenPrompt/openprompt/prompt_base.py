@@ -180,7 +180,6 @@ class Template(nn.Module):
                 i = j + 1
 
             parsed.append(d)
-
         return parsed
 
     # @abstractmethod
@@ -200,12 +199,11 @@ class Template(nn.Module):
         Returns:
             :obj:`List[Dict]`: A list of dict of the same length as self.text. e.g. ``[{"loss_ids": 0, "text": "It was"}, {"loss_ids": 1, "text": "<mask>"}, ]``
         '''
-
+        
         if self.text is None:
             raise ValueError("template text has not been initialized")
         if isinstance(example, InputExample):
             text = self.incorporate_text_example(example)
-
             not_empty_keys = example.keys()
             for placeholder_token in self.placeholder_mapping:
                 not_empty_keys.remove(self.placeholder_mapping[placeholder_token]) # placeholder has been processed, remove
@@ -236,6 +234,7 @@ class Template(nn.Module):
                 wrapped_parts_to_tokenize.append(dict(zip(keys, piece)))
 
             wrapped_parts_not_tokenize = {key: getattr(example, key) for key in not_empty_keys}
+            print([wrapped_parts_to_tokenize, wrapped_parts_not_tokenize])
             return [wrapped_parts_to_tokenize, wrapped_parts_not_tokenize]
         else:
             raise TypeError("InputExample")

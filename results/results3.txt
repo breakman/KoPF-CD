@@ -1,0 +1,316 @@
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.568
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.499
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.451
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.509
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.509
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.496
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 100	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.622
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.538
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.538
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.512
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.51
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.51
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.51
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.51
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.507
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.528
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.519
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.508
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.528
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.515
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.515
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.515
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.545
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.515
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 10	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.576
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.633
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.515
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.569
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 3	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.644
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 80	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.607
+
+====================
+dataset KR-Clickbait	temp 0	seed 50	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.571
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.6573716781943939
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 30	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.584
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.609
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 10	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.518
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.496
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.506
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.64
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 50	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.488
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 20	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.517
+
+====================
+dataset KR-Clickbait	temp 0	seed 100	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.689
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 20	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.49
+
+====================
+dataset KR-Clickbait	temp 1	seed 24395	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+
+====================
+dataset KR-Clickbait	temp 1	seed 7001	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.471
+
+====================
+dataset KR-Clickbait	temp 1	seed 2460	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.487
+
+====================
+dataset KR-Clickbait	temp 1	seed 31771	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.496
+
+====================
+dataset KR-Clickbait	temp 1	seed 28055	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.489
+
+====================
+dataset KR-Clickbait	temp 1	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.576
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.61
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.568
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.688
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.646
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.649
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7806841046277666
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5845070422535211
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 10	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.6126760563380281
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 30	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7625754527162978
+
+====================
+dataset KR-Clickbait	temp 2	seed 100	shot 20	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.6146881287726358
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 80	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7706237424547284
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.721327967806841
+
+====================
+dataset KR-Clickbait	temp 3	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7826961770623743
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7183098591549296
+
+====================
+dataset KR-Clickbait	temp 2	seed 144	shot 40	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7816901408450704
+
+====================
+dataset KR-Clickbait	temp 3	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7826961770623743
+
+====================
+dataset KR-Clickbait	temp 3	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7826961770623743
+
+====================
+dataset KR-Clickbait	temp 3	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7977867203219315
+
+====================
+dataset KR-Clickbait	temp 3	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.7716297786720322
+
+====================
+dataset KR-Clickbait	temp 4	seed 144	shot 40	verb soft	cali False	filt none	maxsplit -1	kptw_lr 0.06	
+Acc: 0.5
+

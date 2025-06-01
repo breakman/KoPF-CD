@@ -132,9 +132,11 @@ class PromptDataLoader(object):
         r"""Pass the wrapped text into a prompt-specialized tokenizer,
            the true PretrainedTokenizer inside the tokenizer is flexible, e.g. AlBert, Bert, T5,...
         """
+        print(">> Start tokenizing:", len(self.wrapped_dataset), "examples")
         for idx, wrapped_example in tqdm(enumerate(self.wrapped_dataset),desc='tokenizing'):
         # for idx, wrapped_example in enumerate(self.wrapped_dataset):
             inputfeatures = InputFeatures(**self.tokenizer_wrapper.tokenize_one_example(wrapped_example, self.teacher_forcing), **wrapped_example[1]).to_tensor()
+          
             self.tensor_dataset.append(inputfeatures)
 
     def __len__(self):
@@ -294,6 +296,7 @@ class PromptForClassification(nn.Module):
         """
         outputs = self.prompt_model(batch)
         outputs = self.verbalizer.gather_outputs(outputs)
+        
         if isinstance(outputs, tuple):
             outputs_at_mask = [self.extract_at_mask(output, batch) for output in outputs]
         else:
