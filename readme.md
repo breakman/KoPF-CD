@@ -1,18 +1,18 @@
-This is the repository for the "Clickbait Detection via Prompt-tuning with Titles Only".
+제목과 내용 요약을 바탕으로 한국어 뉴스 기사의 clickbait 를 탐지하는 프로젝트 입니다.
 
-First, by `pip install -r requirement.txt` to install all the dependencies.
+```bash
+git clone https://github.com/breakman/KoPF-CD.git 
+```
+해당 명령을 통해 다운 받을 수 있습니다.
 
-Then you need to install OpenPrompt.
-And copy prompts/knowledgeable_verbalizer.py to Openprompt/openprompt/prompts/knowledgeable_verbalizer.py.
+```bash
+pip install requirements.txt
+```
+해당 명령으로 실행해 필요한 패키지를 다운 받을 수 있습니다.
 
-In addition,You need to use e methods to filter tag words,In this process, you need to download the corresponding vocabulary.
-These words need to be put scripts/TextClassification，and modify the corresponding position.
-
-Also, you can put your own dataset in datasets/TextClassification.
-
-example shell scripts:
-
-python main.py  --verbalizer cpt
+OpenPrompt 폴더더로 들어가 ```pip install -e .``` 를 해야 합니다.
 
 
-
+```bash
+python3 app.py
+```

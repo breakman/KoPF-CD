@@ -2,8 +2,8 @@ import csv
 import random
 from collections import defaultdict
 
-INPUT_CSV = "test3.csv"       # 전체 데이터
-OUTPUT_CSV = "balanced_sample_test.csv"   # 출력 파일
+INPUT_CSV = "top25_clickbait_sorted.csv"       # 전체 데이터
+OUTPUT_CSV = "balanced_sample_train.csv"   # 출력 파일
 SAMPLE_TOTAL = 1000
 
 TYPES = ["EC", "ET", "GB", "IS", "LC", "PO", "SO"]

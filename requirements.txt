@@ -1,5 +1,5 @@
 torch>=1.7
-transformers==4.25.1  # ← 명시적 버전 지정
+transformers==4.25.1 
 sentencepiece==0.1.96
 tqdm>=4.62.2
 tensorboardX
@@ -12,3 +12,9 @@ pyarrow
 scipy
 argparse
 git+https://github.com/SKTBrain/KoBERT.git@master#egg=kobert_tokenizer&subdirectory=kobert_hf
+Flask>=2.0
+requests>=2.25
+beautifulsoup4>=4.9
+kobert-transformers
+accelerate
+selenium

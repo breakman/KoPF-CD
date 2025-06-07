@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>낚시성 기사 탐지기</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="url"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .loader {
+            display: none; /* Hidden by default */
+            border: 5px solid #f3f3f3; /* Light grey */
+            border-top: 5px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>낚시성 기사 탐지기</h1>
+        <form action="/predict" method="post" id="urlForm">
+            <label for="news_url">뉴스 기사 URL:</label>
+            <input type="url" id="news_url" name="news_url" required placeholder="예: https://www.yna.co.kr/view/...">
+            <button type="submit">분석하기</button>
+        </form>
+        <div class="loader" id="loadingSpinner"></div>
+    </div>
+
+    <script>
+        document.getElementById('urlForm').addEventListener('submit', function() {
+            document.getElementById('loadingSpinner').style.display = 'block';
+        });
+    </script>
+</body>
+</html> 

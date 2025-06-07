@@ -1,4 +1,0 @@
-====================
-dataset KR-Clickbait	temp 0	seed 144	shot 5	verb cpt	cali False	filt none	maxsplit -1	kptw_lr 0.06	
-Acc: 0.5174287753197563
-

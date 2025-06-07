@@ -2,3 +2,5 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
 data/*.csv filter=lfs diff=lfs merge=lfs -text
+. filter=lfs diff=lfs merge=lfs -text
+ckpts/8219.ckpt filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,5 @@
+====================
+dataset KR-Clickbait	temp 1	shot 40	verb soft	kptw_lr 0.06	
+Test Acc: 0.7797 ± 0.0000
+Test F1 : 0.7763 ± 0.0000
+
